@@ -17,6 +17,7 @@ gcloud container clusters get-credentials <cluster-name> --zone <zone>
 Create StatefulSets for your backend application and database. StatefulSets maintain stable network identities for the pods.
 
 Create a StatefulSet manifest (backend-statefulset.yaml):
+
 <img width="365" alt="image" src="https://github.com/spiral99/yolo-cluster/assets/65442188/e45ec174-a6b9-48e8-afaa-9f1849863a71">
 
 Create a StatefulSet manifest (database-statefulset.yaml):
@@ -33,9 +34,11 @@ kubectl apply -f database-statefulset.yaml
 Create services to expose the backend and database StatefulSets.
 
 Create a service manifest (backend-service.yaml):
+
 <img width="364" alt="image" src="https://github.com/spiral99/yolo-cluster/assets/65442188/5c3dd0c0-e6ef-4269-965f-159581b2dee2">
 
 Create a service manifest (database-service.yaml):
+
 <img width="368" alt="image" src="https://github.com/spiral99/yolo-cluster/assets/65442188/f4abab14-7b8b-4a22-b952-da77bf8a4b6d">
 
 Apply the service manifests:
@@ -45,6 +48,7 @@ kubectl apply -f database-service.yaml
 
 # 10. Deploy Front-End:
 Deploy your React front-end application using a Deployment or StatefulSet as needed. Create a deployment manifest (frontend-deployment.yaml):
+
 <img width="368" alt="image" src="https://github.com/spiral99/yolo-cluster/assets/65442188/834a5065-88a6-45ff-8f3d-0e4fefe6ab15">
 
 Apply the deployment manifest:
