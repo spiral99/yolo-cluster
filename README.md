@@ -58,3 +58,8 @@ kubectl apply -f frontend-deployment.yaml
 # 11. Access the Applications:
 After a moment, you can use the services' ClusterIPs to communicate between your front-end, backend, and database applications.
 Remember, this is a simplified guide, and actual implementations might require additional configurations like environment variables, secret management, and database initialization. Always ensure you follow best practices for security, scalability, and maintainability.
+
+# 12. Working site:
+http://44.206.242.56:3000/
+
+<img width="1267" alt="image" src="https://github.com/spiral99/yolo-cluster/assets/65442188/8d5b7f4f-43ec-4726-a49a-88ca702cdd71">
