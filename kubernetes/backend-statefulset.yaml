@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: backend
-          image: <dockerhub-username>/<backend-image>:<tag>
+          image: m33k/yolo-client:v1
           ports:
             - containerPort: 3000
